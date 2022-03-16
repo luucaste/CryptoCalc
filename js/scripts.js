@@ -74,5 +74,8 @@ const createList = (crypto, transaction) => {
                 <td class="item-transaction">${profitCalc.toFixed(2)}%</td>
             </tr>`;
     getTableTransaction.innerHTML += createListElem;
-    localStorage.setItem(miStorage, createListElem);
+    for (let i = 0; i < localStorage.length; i++) {
+        let localSValue = localStorage.key(i);
+        localStorage.setItem(createListElem, localSValue);
+    }
 };
