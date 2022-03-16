@@ -1,0 +1,127 @@
+/*-------------------------*/
+/* SKEW COUNTER CLOCKWISE  */
+/*-------------------------*/
+.skew-c {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to left bottom, #fff 49%, #9F7FB1 50%);
+}
+
+/*------------------*/
+/*  SKEW CLOCKWISE  */
+/*------------------*/
+.skew-cc {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to right bottom, #9F7FB1 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #fff 0);
+}
+
+/* ONLY DESKTOP */
+
+@media screen and (min-width:1025px) {
+    .card-titleAndText {
+        width: 50%;
+    }
+
+    .card-body--container {
+        padding: 3rem 3rem;
+    }
+
+    .crypto-calc--container {
+        padding: 9% 9% 9% 9%;
+    }
+}
+
+/* END ONLY DESKTOP */
+
+
+/* ONLY MOBILE */
+
+@media screen and (max-width:767px) {
+    .container-login {
+        margin: 0 auto;
+    }
+
+    .container-personalInfo {
+        width: min-content;
+    }
+
+    table#cryptoList--container {
+        width: fit-content;
+    }
+}
+
+/* END ONLY MOBILE */
+
+.card-body--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    background: #9F7FB1;
+    width: 100%;
+    padding: 9% 9% 9% 9%;
+}
+
+.card-titleAndText {
+    margin-bottom: 40px;
+}
+
+.container-login {
+    width: fit-content;
+}
+
+.container-personalInfo {
+    margin-bottom: 15px;
+}
+
+.user-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+label.user-label {
+    margin-right: 10px;
+}
+
+.cryptoAccess-btn {
+    float: right;
+}
+
+.crypto-calc--container {
+    background: #9F7FB1;
+    width: 100%;
+}
+
+label.labelTitle {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+div#currentValue {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div#buyInput--container {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+table#cryptoList--container {
+    text-align: center;
+}
+
+img.logoCrypto {
+    width: 40px;
+}
